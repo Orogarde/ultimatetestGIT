@@ -25,7 +25,11 @@ $tableau= array( // création du tableau associatif #1
         //  echo  $nomBateau.'<br>';
         //  echo $infoEquipage["nbEquipage"]." ".$infoEquipage['passager'].'<br>';
     }
-    
+    $total=0;
+    foreach ($tableau as $nomBateau => $infoEquipage) {
+        $total += $infoEquipage["passager"];
+    }  
+    echo $total;  
 
 
 ?>   
