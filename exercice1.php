@@ -15,6 +15,7 @@ $tableau= array( // création du tableau associatif #1
     "Manuevra"=> array("nbEquipage"=>3,"passager"=>4) ,  //sous-tableau associatif
     "Sirius"=>array("nbEquipage"=>4,"passager"=>6) ,    //sous-tableau associatif
     "Surcouf"=>array("nbEquipage"=>8,"passager"=>15)    //sous-tableau associatif
+    "Nautilus"=>array("nbEquipage"=>5,"passager"=>5), 
     );
     foreach ($tableau as $nomBateau => $infoEquipage) { //parcours du tableau principal
             echo $nomBateau." a ".$infoEquipage["passager"]." passagers ".'<br>'; 
