@@ -11,16 +11,16 @@
 <h2> Une société qui loue des bateaux de plaisance veut connaitre les bateaux
  qui peuvent embarquer plus de 10 passagers </h2>
  <?php
-$tableau= array( 
-    "Manuevra"=> array("nbEquipage"=>3,"passager"=>4) ,
-    "Sirius"=>array("nbEquipage"=>4,"passager"=>6) ,
-    "Surcouf"=>array("nbEquipage"=>8,"passager"=>15)
+$tableau= array( // création du tableau associatif #1
+    "Manuevra"=> array("nbEquipage"=>3,"passager"=>4) ,  //sous-tableau associatif
+    "Sirius"=>array("nbEquipage"=>4,"passager"=>6) ,    //sous-tableau associatif
+    "Surcouf"=>array("nbEquipage"=>8,"passager"=>15)    //sous-tableau associatif
     );
-    foreach ($tableau as $nomBateau => $infoEquipage) {
-            echo $nomBateau." a ".$infoEquipage["passager"]." passagers ".'<br>';
-          if($infoEquipage["passager"]>10)
+    foreach ($tableau as $nomBateau => $infoEquipage) { //parcours du tableau principal
+            echo $nomBateau." a ".$infoEquipage["passager"]." passagers ".'<br>'; 
+          if($infoEquipage["passager"]>10) // si le nombre de passager est supérieur à 10 ...
           {
-              echo "les Bateaux qui peuvent embarquer plus de 10 passagers sont : ".$nomBateau.'<br>';
+              echo "les Bateaux qui peuvent embarquer plus de 10 passagers sont : ".$nomBateau.'<br>'; // ... affichage du bateau en question
           }
         //  echo  $nomBateau.'<br>';
         //  echo $infoEquipage["nbEquipage"]." ".$infoEquipage['passager'].'<br>';
